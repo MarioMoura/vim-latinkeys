@@ -1,0 +1,107 @@
+*latinkeys.txt*    A special keys mapper for insert mode
+                    Author: Mario Moura, mariohenriqueneto at gmail com
+
+
+==========================================================================
+CONTENTS                                                      *vlk-contents*
+
+   01. Intro ................................................... |vlk-intro|
+   02. Features ............................................. |vlk-features|
+   03. Configuration ................................... |vlk-configuration|
+   04. Commands ............................................. |vlk-commands|
+
+==========================================================================
+INTRODUCTION                                                     *vlk-intro*
+
+The plugin mainly allow for characters with accents to be typed with a
+standard US keyboard or any keyboard for that matter.
+
+==========================================================================
+FEATURES                                                      *vlk-features*
+
+By default the mappings are toggled with <leader>tk. When toggled accents
+will be available for typing in insert mode.
+
+* ã >
+	~a 
+* é >
+	 'e 
+* á >
+	 'a 
+* à >
+	 `a 
+* â >
+	 ^a 
+* ê >
+	 ^e 
+* í >
+	 'i 
+* î >
+	 ^i 
+* ô >
+	 ^o 
+* ó >
+	 'o 
+* õ >
+	 ~o 
+* û >
+	 ^u 
+* ú >
+	 'u 
+* ç >
+	 cc 
+* Ã >
+	 ~A 
+* Á >
+	 'A 
+* À >
+	 `A 
+* Â >
+	 ^A 
+* É >
+	 'E 
+* Ê >
+	 ^E 
+* Í >
+	 'I 
+* Î >
+	 ^I 
+* Ô >
+	 ^O 
+* Ó >
+	 'O 
+* Õ >
+	 ~O 
+* Û >
+	 ^U 
+* Ú >
+	 'U 
+
+==========================================================================
+CONFIGURATION                                            *vlk-configuration*
+
+* disable the default keybind for toggle keys >
+    let g:vlk_disable_binds=1
+
+The mappings can be set this way:
+
+* bind the on function >
+    nnoremap <leader>tu :call VlkOn()<CR>
+
+* bind the off function >
+    nnoremap <leader>td :call VlkOff()<CR>
+
+* bind the toggle function >
+    nnoremap <leader>tk :call VlkToggleKeys()<CR>
+
+==========================================================================
+COMMANDS                                                      *vlk-commands*
+
+:VlkToggleKeys()
+	Toggle the bindings
+
+:VlkOn()
+	Turn the bindings on
+
+:VlkOff()
+	Turn the bindings off
