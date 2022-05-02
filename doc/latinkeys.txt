@@ -86,13 +86,13 @@ CONFIGURATION                                            *vlk-configuration*
 The mappings can be set this way:
 
 * bind the on function >
-    nnoremap <leader>tu :call VlkOn()<CR>
+    nnoremap <leader>tu :VlkOn()<CR>
 
 * bind the off function >
-    nnoremap <leader>td :call VlkOff()<CR>
+    nnoremap <leader>td :VlkOff()<CR>
 
 * bind the toggle function >
-    nnoremap <leader>tk :call VlkToggleKeys()<CR>
+    nnoremap <leader>tk :VlkToggleKeys()<CR>
 
 ==========================================================================
 COMMANDS                                                      *vlk-commands*

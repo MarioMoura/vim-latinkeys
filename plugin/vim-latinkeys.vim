@@ -83,5 +83,5 @@ command VlkOn call VlkOnInternal()
 command VlkOff call VlkOffInternal()
 
 if !exists('g:vlk_disable_binds')
-	nnoremap <leader>tk :call VlkToggleKeysInternal()<CR>
+	nnoremap <leader>tk :VlkToggleKeys()<CR>
 endif
